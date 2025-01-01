@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Картинки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Сайт с SVG картинками</h1>
+        
+        <div id="question-container">
+            <!-- Контейнер для картинки -->
+            <div id="image-container">
+                <img id="question-image" src="" alt="Вопрос" loading="lazy" />
+            </div>
+            <button id="show-answer-btn">Показать ответ</button>
+            <button id="skip-question-btn">Пропустить вопрос</button>
+            <p id="answer" style="display: none;"></p>
+            <p id="author" style="display: none; font-style: italic;"></p>
+            <p id="category" style="display: none;"></p>
+            <button id="next-question-btn" style="display: none;">Следующий вопрос</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
