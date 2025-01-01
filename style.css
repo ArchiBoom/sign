@@ -1,1 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#author, #category {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Контейнер для картинки */
+#image-container {
+    width: 100%;  /* Ширина контейнера, можно ограничить конкретной величиной */
+    height: 300px;  /* Фиксированная высота для контейнера с картинкой */
+    overflow: hidden;  /* Обрезать лишнее, если картинка выходит за пределы */
+    margin-bottom: 20px;
+    position: relative;  /* Для позиционирования */
+    background-color: #f5f5f5; /* Для улучшения визуального восприятия */
+}
+
+/* Картинка внутри контейнера */
+#question-image {
+    width: 100%;  /* Ширина картинки растягивается по ширине контейнера */
+    height: 100%;  /* Высота картинки растягивается по высоте контейнера */
+    object-fit: contain;  /* Картинка будет масштабироваться, сохраняя пропорции, и помещаться в контейнер */
+    object-position: center;  /* Центрируем картинку, если она не заполняет весь контейнер */
+}
